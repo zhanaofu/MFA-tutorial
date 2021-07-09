@@ -1,6 +1,6 @@
-# Automatic alignment with Montreal aligner
+# Automatic alignment with Montreal Forced Aligner (MFA)
 
- Forced aligners are softwares that automatically align transcripts to the corresponding audio. For linguists, they can save a lot of time spent on annotating recordings. [Montreal Forced Aligner](https://montreal-forced-aligner.readthedocs.io/en/latest/introduction.html) is one of the aligners I found that are easy to use and could produce very good results. In this tutorial, I'll guide you through the installation and some basic functions of MFA, as well as some tricks and code snippets that might be helpful.
+ Forced aligners are softwares that automatically align transcripts to the corresponding audio. For linguists, they can save a lot of time spent on annotating recordings. [Montreal Forced Aligner](https://montreal-forced-aligner.readthedocs.io/en/latest/introduction.html) is one of the aligners I found that are easy to use and could produce very good results. In this tutorial, I'll guide you through the installation and some basic functions of MFA and share some tricks and code snippets that might be helpful.
 
 The structure of the tutorial:
 1. Installation

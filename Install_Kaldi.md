@@ -1,6 +1,6 @@
 # Install Kaldi
 ## Get the tool kit
- First, we need to install [Kaldi](https://github.com/kaldi-asr/kaldi), an open-source speech-recoginition toolkit that's required by MFA.
+ First, we need to install [Kaldi](https://github.com/kaldi-asr/kaldi), an open-source speech-recognition toolkit that's required by MFA.
  Download the files and extract them to a directory you want to keep them in:
 
  ![](image/download.png)
@@ -71,7 +71,7 @@ We need to first check the whether the dependencies are installed in the system.
 **TIP:**
 In macOS and Linux, you can drag the file to the Terminal window to input the directory of the file so that you don't need to type the directory!
 
-Here, the script tells me that I need to run the two commands underlied in the screenshot to install the dependencies. After you run these commands from the output, try run ```extras/check_dependencies.sh``` again. Then you should see the script telling you
+Here, the script tells me that I need to run the two commands underlined in the screenshot to install the dependencies. After you run these commands from the output, try running ```extras/check_dependencies.sh``` again. Then you should see the script telling you
 "all OK"!
 
 ![](image/dep_installed.png)
@@ -84,7 +84,7 @@ Now we can run the ```make``` command. Note that it can take a long time.
 Now that we're done with the work in **tools/**, we can move on to **src/**
 
 ## Installation at src/
-Run the three commands listed in the **INSTALL** file. Again, the installation here might take a long time. Then Kaldi will be installed on your computer.
+Run the three commands listed in the **INSTALL** file. Again, the installation here might take a long time. Then Kaldi should be installed on your computer.
 
 /src/INSTALL files:
 
