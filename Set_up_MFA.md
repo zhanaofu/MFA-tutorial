@@ -6,4 +6,4 @@ Follow the [instruction from the MFA document](https://montreal-forced-aligner.r
 ## Download resources required for alignment
 After setting up MFA. We still need to download some more resources before we can start alignment. Using English as an example:
 1. Download the pre-trained acoustic model by running ```mfa download acoustic english```.
-2. Download the [pronunciation dictionary](https://raw.githubusercontent.com/MontrealCorpusTools/mfa-models/main/dictionary/english.dict) and keep it somewhere you can remember, for example **MFA/pretrained_models/dictionary/**.
+2. Download the pronunciation dictionary by running ```mfa download dictionary english```.
