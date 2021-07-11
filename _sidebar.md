@@ -7,7 +7,7 @@
 
 - Alignment with MFA
 
-  - [Start from a single recording](Start_from_a_single_recording.md)
-  - Batch processing
+  - [Start with a single recording](Start_with_a_single_recording.md)
+  - [Batch processing](Batch_processing.md)
 
-- Other tools for automatic phonetic transcription
+- [Other tools for automatic phonetic transcription](Other_tools_for_automatic_phonetic_transcription)
