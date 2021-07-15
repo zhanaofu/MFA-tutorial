@@ -18,7 +18,7 @@ Fret not! At a time when your phone can push personalized ads according to what 
 
 The [BAS Web Service](https://clarin.phonetik.uni-muenchen.de/BASWebServices/interface) has the Automatic Speech Recognition (ASR) tool among its wide range of phonetic processing tools. It's free for academic purposes and very easy to use. You just need to upload the audio files and fill in a few options on a webpage, then it will send the audio to a third-party ASR service and return the transcripts.
 
-[Deep Speech](https://github.com/mozilla/DeepSpeech) is an open-source speech-text-engine. You can use it offline with pre-trained models. I have [a short script](Batch_processing?id=11-transcribing-recordings-for-recordings-with-different-content-with-deepspeech) for transcribing audio files in batch.
+[DeepSpeech](https://github.com/mozilla/DeepSpeech) is an open-source speech-text-engine. You can use it offline with pre-trained models. I have [a short script](Batch_processing?id=11-transcribing-recordings-for-recordings-with-different-content-with-deepspeech) for transcribing audio files in batch.
 
 There are also some commercial ASR services you can try. Here are some links:
 - [Amazon Transcribe](https://aws.amazon.com/transcribe/)
@@ -61,7 +61,7 @@ This step isn't necessary. But when you run into some errors, this command is us
 
 ## 4. Run the alignment
 
-Switch to the conda environment with MFA with ```conda activate aligner```('aligner is the name of the environment'). Use the command ```mfa align corpus_directory dictionary_path acoustic_model_path output_directory``` to run the alignment. There are some options you can specify with this command. For example, adding ```--clean``` to the end of the command tells the machine to remove the temporary files before alignment. The temporary files store dataset-specific information. They should be cleaned when you align data from different speakers but stored in a folder with the same name as any previously aligned dataset. On my computer, the process looks like this:
+Switch to the conda environment with MFA with ```conda activate aligner```('aligner' is the name of the environment with MFA). Use the command ```mfa align corpus_directory dictionary_path acoustic_model_path output_directory``` to run the alignment. There are some options you can specify with this command. For example, adding ```--clean``` to the end of the command tells the machine to remove the temporary files before alignment. The temporary files store dataset-specific information. They should be cleaned when you align data from different speakers but stored in a folder with the same name as any previously aligned dataset. On my computer, the process looks like this:
 ![](image/align.png)
 
 Then the .textgrid files with aligned transcripts should appear in the output_directory. This is what I got:
@@ -71,4 +71,4 @@ Then the .textgrid files with aligned transcripts should appear in the output_di
 
 If the .textgrid files are well aligned, congratulations! But the aligner can produce bad results in some cases. The most common causes for alignment errors are noises and speech errors in the recording. It's often easier to make some adjustments to the files and rerun the alignment than to manually correct the results. Depending on your situation, you might want to edit the audio (e.g., cutting out the noises/errors) or edit the transcript (e.g., marking the noises/errors). For example, in some phonetic experiment recordings, the sound of keyboard strokes can interfere with the the alignment. You can add an entry like ```KEYBOARDNOISE D``` (representing the keyboard sound with /d/) to the dictionary and add 'KEYBOARDNOISE' in the transcript whenever there's a key stroke.
 
-[Last update: Jul 14, 2021]
+[Last update: Jul 15, 2021]

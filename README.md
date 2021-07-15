@@ -9,7 +9,7 @@ The structure of the tutorial:
 	1. [Set up MFA](Set_up_MFA.md)
 	2. [Install Kaldi](Install_Kaldi.md)
 2. **Alignment with MFA**
-	1. [Start from a single recording](Start_from_a_single_recording.md)
+	1. [Start from a single recording](Start_with_a_single_recording.md)
 	2. [Batch processing](Batch_processing.md)
 3. [Other tools for automatic phonetic transcription](Other_tools_for_automatic_phonetic_transcription)
 
