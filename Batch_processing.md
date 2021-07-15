@@ -29,7 +29,7 @@ This script assumes the recordings are kept in separate folders (for different s
 
 ```bash
 for file in audio/*/*.wav; do
-  deepspeech --model deepspeech-0.9.3-models.pbmm --scorer deepspeech-0.9.3-models.scorer --audio $file > ${tmp/wav/txt};
+  deepspeech --model deepspeech-0.9.3-models.pbmm --scorer deepspeech-0.9.3-models.scorer --audio $file > ${file/wav/txt};
 done
 ```
 
