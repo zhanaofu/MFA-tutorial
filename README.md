@@ -13,6 +13,6 @@ The structure of the tutorial:
 	2. [Batch processing](Batch_processing.md)
 3. [Other tools for automatic phonetic transcription](Other_tools_for_automatic_phonetic_transcription)
 
-This guide was prepared for a workshop in the [Phonetics Laboratory at University of Toronto](http://www.utphonetics.ca).
+This guide was based on MFA 2.0.0a21, and was prepared for a workshop in the [Phonetics Laboratory at University of Toronto](http://www.utphonetics.ca).
 
 [Last update: Jul 14, 2021]

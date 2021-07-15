@@ -126,4 +126,26 @@ mfa align /users/f/downloads/shared/demo/process /Users/f/Documents/MFA/pretrain
     ...
 ```
 
-[Last update: Jul 14, 2021]
+If you want to move the transcriptions to the original directory for audio files, you can use the following script:
+
+```python
+import os, re, shutil
+from glob import glob
+
+transcription_directory = '/Users/f/Downloads/shared/demo/transcriptions'
+
+# Cycling through all speakers
+for folder in glob(transcription_directory+'/*/'):
+
+  # Cycling through all audio for each speaker
+    for tg in glob(folder+'*.TextGrid'):
+
+        # Generating the audio directory and move the TextGrid files
+        out_dir = tg.replace('transcriptions','audio')
+        shutil.move(tg, out_dir)
+
+    # Removing the speaker directory after all the TextGrid files are moved
+    os.rmdir(folder)
+```
+
+[Last update: Jul 15, 2021]
