@@ -1,4 +1,4 @@
-# Install Kaldi
+# Install Kaldi on Linux/macOS
 ## 1. Get the tool kit
  First, we need to install [Kaldi](https://github.com/kaldi-asr/kaldi), an open-source speech-recognition toolkit that's required by MFA.
  Download the files and extract them to a directory you want to keep them in:
@@ -108,4 +108,4 @@ Run the three commands listed in the **INSTALL** file. Again, the installation h
 	For more information, see documentation at http://kaldi-asr.org/doc/
 	and click on "The build process (how Kaldi is compiled)".
 
-[Last update: Jul 14, 2021]
+[Last update: Jul 16, 2021]
